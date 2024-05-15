@@ -1,0 +1,38 @@
+h1 {
+    margin: auto;
+    transition: transform is ease;
+}
+
+body {
+    border: 7px solid red;
+    margin: 20px white;
+    padding: 23px;
+    background-color: aqua;
+    line-height: 25px;
+}
+
+ol li {
+    text-decoration: double;
+    text-decoration-color: black;
+    color: purple;
+}
+
+/* Define animation */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+h1 {
+    animation: move 2s infinite;
+    /* Animation-name duration iteration-count */
+}
