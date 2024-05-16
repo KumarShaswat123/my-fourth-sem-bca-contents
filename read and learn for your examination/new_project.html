@@ -1451,52 +1451,8 @@
             <li>
 
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-    </div>
-    <!-- <div>
-        <h2></h2>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-    </div>
-    <div>
-        <h2></h2>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-    </div>
-    <div>
-        <h2></h2>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-    </div> -->
-    <ul>
-        <li>
-            <details>
-                <summary>contents</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum facilis repudiandae, ipsa, a
-                    laudantium totam magni esse amet illo nostrum voluptate distinctio. Facere delectus dolor totam iste
-                    exercitationem labore.</p>
-            </details>
-        </li>
-    </ul>
-</body>
-
-</html>
-<ul>
+            <li>Database Constraints 
+                 <ul>
     <li>
         <details>
             <summary>Database Constraints</summary>
@@ -1911,123 +1867,50 @@
                 3 | Charlie | 10 | Dr. Smith
                 ```
 
-                In this 2NF table, `AdvisorName` depends on `AdvisorID`, not on `StudentID`. This is a transitive
-                dependency because `AdvisorName` is indirectly dependent on the primary key (`StudentID`) through
-                `AdvisorID`.
+                In this 2NF table, `AdvisorName` depends on `AdvisorID`, not on `StudentID`. This is a transit
+            </li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <!-- <div>
+        <h2></h2>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <div>
+        <h2></h2>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <div>
+        <h2></h2>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div> -->
+    <ul>
+        <li>
+            <details>
+                <summary>contents</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum facilis repudiandae, ipsa, a
+                    laudantium totam magni esse amet illo nostrum voluptate distinctio. Facere delectus dolor totam iste
+                    exercitationem labore.</p>
+            </details>
+        </li>
+    </ul>
+</body>
 
-                <br>To achieve 3NF, we split the table:<br>
+</html>
 
-                <br>Students Table:<br>
-                ```
-                StudentID | StudentName | AdvisorID
-                -----------------------------------
-                1 | Alice | 10
-                2 | Bob | 11
-                3 | Charlie | 10
-                ```
-
-                <br>Advisors Table:<br>
-                ```
-                AdvisorID | AdvisorName
-                -----------------------
-                10 | Dr. Smith
-                11 | Dr. Johnson
-                ```
-
-                Now, there are no transitive dependencies, and the tables are in 3NF:
-                - In the `Students` table, `StudentID` is the primary key.
-                - In the `Advisors` table, `AdvisorID` is the primary key.
-
-                ### Boyce-Codd Normal Form (BCNF)
-
-                BCNF is a stricter version of 3NF. A table is in BCNF if:
-                1. It is already in 3NF.
-                2. For every functional dependency \( A \to B \), \( A \) is a superkey.
-
-                A superkey is an attribute or a set of attributes that uniquely identifies a row in a table.
-
-                <br>Example:<br>
-                Consider a table storing course enrollments and the instructors who teach them.
-
-                <br>3NF Table:<br>
-                ```
-                CourseID | InstructorID | Room
-                -----------------------------
-                1 | 101 | 202
-                2 | 102 | 203
-                3 | 101 | 204
-                ```
-
-                Assume that:
-                - Each course is taught by one instructor.
-                - An instructor can teach multiple courses.
-                - Each room is uniquely assigned to a course.
-
-                In this table:
-                - `CourseID` is a candidate key.
-                - `InstructorID` and `Room` depend on `CourseID`.
-
-                However, if we have a situation where each instructor is assigned a unique room regardless of the
-                course, there might be a functional dependency `InstructorID -> Room`.
-
-                <br>BCNF Violation:<br>
-                ```
-                CourseID | InstructorID | Room
-                -----------------------------
-                1 | 101 | 202
-                2 | 102 | 203
-                3 | 101 | 202
-                ```
-
-                Here, `InstructorID` is not a superkey because it does not uniquely identify rows. To resolve this and
-                achieve BCNF, we need to decompose the table.
-
-                <br>To achieve BCNF, we split the table:<br>
-
-                <br>Courses Table:<br>
-                ```
-                CourseID | InstructorID
-                -----------------------
-                1 | 101
-                2 | 102
-                3 | 101
-                ```
-
-                <br>Instructors Table:<br>
-                ```
-                InstructorID | Room
-                -------------------
-                101 | 202
-                102 | 203
-                ```
-
-                Now, all functional dependencies have superkeys as their determinants, and the tables are in BCNF:
-                - In the `Courses` table, `CourseID` is the primary key.
-                - In the `Instructors` table, `InstructorID` is the primary key.
-
-                ### Summary
-
-                - <br>3NF (Third Normal Form)<br>: Eliminates transitive dependencies, ensuring non-prime attributes
-                depend
-                only on candidate keys.
-                - <br>BCNF (Boyce-Codd Normal Form)<br>: A stricter version of 3NF, ensuring every determinant is a
-                superkey.
-
-                By normalizing to 3NF and BCNF, we reduce redundancy and enhance the integrity of the database, making
-                it more robust and easier to maintain.
-            </p>
-        </details>
-    </li>
-    <li>
-        <details>
-            <summary>Lossless Join Decompositions(4NF , 5NF)</summary>
-            <p></p>
-        </details>
-    </li>
-    <li>
-        <details>
-            <summary>DKNF</summary>
-            <p></p>
-        </details>
-    </li>
-</ul>
