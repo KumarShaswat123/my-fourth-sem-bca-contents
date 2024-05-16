@@ -11,7 +11,7 @@
 <body>
     <h1>4th semester subjects and their subtopics</h1>
     <div>
-        <h2></h2>
+        <h2>Data Structure and analysis of Algorithm</h2>
         <ol>
             <li>Introduction</li>
             <ul>
@@ -543,7 +543,7 @@
                             such that the
                             algorithm takes the longest time to execute or consumes the most memory.
 
-                            - **Example**: Consider the linear search algorithm. The worst case scenario is when the
+                            - <br>Example<br>: Consider the linear search algorithm. The worst case scenario is when the
                             element being
                             searched for is not present in the array, and the algorithm has to traverse the entire array
                             to
@@ -557,7 +557,8 @@
                             such that the
                             algorithm executes in the shortest time or consumes the least memory.
 
-                            - **Example**: For the linear search algorithm, the best case scenario is when the element
+                            - <br>Example<br>: For the linear search algorithm, the best case scenario is when the
+                            element
                             being
                             searched for is the first element in the array. In this case, the algorithm will find the
                             element in the
@@ -570,7 +571,7 @@
                             possible inputs. It is the average of all possible scenarios weighted by their respective
                             probabilities.
 
-                            - **Example**: For the linear search algorithm, assuming all elements in the array are
+                            - <br>Example<br>: For the linear search algorithm, assuming all elements in the array are
                             equally likely to
                             be searched for, the average case scenario occurs when the element being searched for is
                             present at any
@@ -580,12 +581,15 @@
 
                             ### Importance and Considerations
 
-                            - **Performance Evaluation**: Considering worst, best, and average case scenarios provides a
+                            - <br>Performance Evaluation<br>: Considering worst, best, and average case scenarios
+                            provides a
                             comprehensive understanding of an algorithm's performance characteristics.
-                            - **Resource Allocation**: Knowing the worst case scenario helps in allocating sufficient
+                            - <br>Resource Allocation<br>: Knowing the worst case scenario helps in allocating
+                            sufficient
                             resources to
                             handle extreme situations.
-                            - **Algorithm Selection**: Different scenarios may favor different algorithms. For example,
+                            - <br>Algorithm Selection<br>: Different scenarios may favor different algorithms. For
+                            example,
                             an algorithm
                             with a slower worst case but faster average case may be preferred over one with a faster
                             worst case but
@@ -615,40 +619,46 @@
 
                             ### 1. Big O Notation (O-notation)
 
-                            - **Definition**: Big O notation represents an upper bound on the growth rate of a function.
+                            - <br>Definition<br>: Big O notation represents an upper bound on the growth rate of a
+                            function.
                             It
                             describes the worst-case scenario of an algorithm's time or space complexity.
-                            - **Usage**: Big O notation is used to express the upper limit of an algorithm's time or
+                            - <br>Usage<br>: Big O notation is used to express the upper limit of an algorithm's time or
                             space
                             complexity.
-                            - **Example**: If an algorithm has a time complexity of O(n^2), it means that the running
+                            - <br>Example<br>: If an algorithm has a time complexity of O(n^2), it means that the
+                            running
                             time of the
                             algorithm grows quadratically with the input size.
 
                             ### 2. Big Omega Notation (Ω-notation)
 
-                            - **Definition**: Big Omega notation represents a lower bound on the growth rate of a
+                            - <br>Definition<br>: Big Omega notation represents a lower bound on the growth rate of a
                             function. It
                             describes the best-case scenario of an algorithm's time or space complexity.
-                            - **Usage**: Big Omega notation is used to express the lower limit of an algorithm's time or
+                            - <br>Usage<br>: Big Omega notation is used to express the lower limit of an algorithm's
+                            time or
                             space
                             complexity.
-                            - **Example**: If an algorithm has a time complexity of Ω(n), it means that the running time
+                            - <br>Example<br>: If an algorithm has a time complexity of Ω(n), it means that the running
+                            time
                             of the
                             algorithm grows linearly with the input size in the best-case scenario.
 
                             ### 3. Big Theta Notation (Θ-notation)
 
-                            - **Definition**: Big Theta notation represents both upper and lower bounds on the growth
+                            - <br>Definition<br>: Big Theta notation represents both upper and lower bounds on the
+                            growth
                             rate of a
                             function. It describes the tightest possible bound on an algorithm's time or space
                             complexity.
-                            - **Usage**: Big Theta notation is used to express both the upper and lower limits of an
+                            - <br>Usage<br>: Big Theta notation is used to express both the upper and lower limits of an
                             algorithm's
                             time or space complexity, indicating that the algorithm's performance is tightly bounded
                             within these
                             limits.
-                            - **Example**: If an algorithm has a time complexity of Θ(n), it means that the running time
+                            - <br>Example<br>: If an algorithm has a time complexity of Θ(n), it means that the running
+                            time
                             of the
                             algorithm grows linearly with the input size in both the best and worst-case scenarios.
 
@@ -660,31 +670,34 @@
                             their relative
                             efficiency.
 
-                            1. **Constant Time (O(1))**: Algorithms with constant time complexity execute in a constant
+                            1. <br>Constant Time (O(1))<br>: Algorithms with constant time complexity execute in a
+                            constant
                             amount of
                             time regardless of the input size. Example: Accessing an element in an array by index.
 
-                            2. **Logarithmic Time (O(log n))**: Algorithms with logarithmic time complexity grow
+                            2. <br>Logarithmic Time (O(log n))<br>: Algorithms with logarithmic time complexity grow
                             logarithmically
                             with the input size. Example: Binary search in a sorted array.
 
-                            3. **Linear Time (O(n))**: Algorithms with linear time complexity grow linearly with the
+                            3. <br>Linear Time (O(n))<br>: Algorithms with linear time complexity grow linearly with the
                             input size.
                             Example: Iterating through all elements in an array.
 
-                            4. **Linearithmic Time (O(n log n))**: Algorithms with linearithmic time complexity grow as
+                            4. <br>Linearithmic Time (O(n log n))<br>: Algorithms with linearithmic time complexity grow
+                            as
                             n times the
                             logarithm of n. Example: Merge sort, quicksort.
 
-                            5. **Polynomial Time (O(n^k))**: Algorithms with polynomial time complexity grow as a
+                            5. <br>Polynomial Time (O(n^k))<br>: Algorithms with polynomial time complexity grow as a
                             polynomial
                             function of the input size. Example: Bubble sort, insertion sort (O(n^2)).
 
-                            6. **Exponential Time (O(k^n))**: Algorithms with exponential time complexity grow
+                            6. <br>Exponential Time (O(k^n))<br>: Algorithms with exponential time complexity grow
                             exponentially with
                             the input size. Example: Brute-force approaches to certain combinatorial problems.
 
-                            7. **Factorial Time (O(n!))**: Algorithms with factorial time complexity grow factorially
+                            7. <br>Factorial Time (O(n!))<br>: Algorithms with factorial time complexity grow
+                            factorially
                             with the input
                             size. Example: Generating all permutations of a set.
 
@@ -719,100 +732,115 @@
 
                                         ### 1. Bubble Sort
 
-                                        - **Description**: Bubble sort repeatedly steps through the list, compares
+                                        - <br>Description<br>: Bubble sort repeatedly steps through the list, compares
                                         adjacent
                                         elements, and swaps them if they are in the wrong order.
-                                        - **Time Complexity**: O(n^2) in the worst and average case, O(n) in the best
+                                        - <br>Time Complexity<br>: O(n^2) in the worst and average case, O(n) in the
+                                        best
                                         case (when the
                                         list is already sorted).
-                                        - **Space Complexity**: O(1) (in-place sorting).
-                                        - **Advantages**: Simple implementation, works well for small datasets or nearly
+                                        - <br>Space Complexity<br>: O(1) (in-place sorting).
+                                        - <br>Advantages<br>: Simple implementation, works well for small datasets or
+                                        nearly
                                         sorted
                                         lists.
-                                        - **Disadvantages**: Inefficient for large datasets due to its quadratic time
+                                        - <br>Disadvantages<br>: Inefficient for large datasets due to its quadratic
+                                        time
                                         complexity.
 
                                         ### 2. Insertion Sort
 
-                                        - **Description**: Insertion sort builds the final sorted array one element at a
+                                        - <br>Description<br>: Insertion sort builds the final sorted array one element
+                                        at a
                                         time by
                                         repeatedly taking the next element and inserting it into the correct position in
                                         the already
                                         sorted part of the array.
-                                        - **Time Complexity**: O(n^2) in the worst and average case, O(n) in the best
+                                        - <br>Time Complexity<br>: O(n^2) in the worst and average case, O(n) in the
+                                        best
                                         case (when the
                                         list is already sorted).
-                                        - **Space Complexity**: O(1) (in-place sorting).
-                                        - **Advantages**: Efficient for small datasets or nearly sorted lists, stable
+                                        - <br>Space Complexity<br>: O(1) (in-place sorting).
+                                        - <br>Advantages<br>: Efficient for small datasets or nearly sorted lists,
+                                        stable
                                         sorting
                                         algorithm.
-                                        - **Disadvantages**: Inefficient for large datasets due to its quadratic time
+                                        - <br>Disadvantages<br>: Inefficient for large datasets due to its quadratic
+                                        time
                                         complexity.
 
                                         ### 3. Selection Sort
 
-                                        - **Description**: Selection sort divides the input list into two parts: the
+                                        - <br>Description<br>: Selection sort divides the input list into two parts: the
                                         sublist of
                                         items already sorted and the sublist of items remaining to be sorted. It
                                         repeatedly selects
                                         the smallest (or largest) element from the unsorted sublist and moves it to the
                                         end of the
                                         sorted sublist.
-                                        - **Time Complexity**: O(n^2) in all cases (worst, average, and best).
-                                        - **Space Complexity**: O(1) (in-place sorting).
-                                        - **Advantages**: Simple implementation, minimal memory usage.
-                                        - **Disadvantages**: Inefficient for large datasets due to its quadratic time
+                                        - <br>Time Complexity<br>: O(n^2) in all cases (worst, average, and best).
+                                        - <br>Space Complexity<br>: O(1) (in-place sorting).
+                                        - <br>Advantages<br>: Simple implementation, minimal memory usage.
+                                        - <br>Disadvantages<br>: Inefficient for large datasets due to its quadratic
+                                        time
                                         complexity,
                                         not stable.
 
                                         ### 4. Merge Sort
 
-                                        - **Description**: Merge sort is a divide-and-conquer algorithm that divides the
+                                        - <br>Description<br>: Merge sort is a divide-and-conquer algorithm that divides
+                                        the
                                         input list
                                         into two halves, sorts each half recursively, and then merges the sorted halves
                                         to produce
                                         the final sorted list.
-                                        - **Time Complexity**: O(n log n) in all cases (worst, average, and best).
-                                        - **Space Complexity**: O(n) (requires additional space for the temporary array
+                                        - <br>Time Complexity<br>: O(n log n) in all cases (worst, average, and best).
+                                        - <br>Space Complexity<br>: O(n) (requires additional space for the temporary
+                                        array
                                         during
                                         merging).
-                                        - **Advantages**: Efficient for large datasets, stable sorting algorithm.
-                                        - **Disadvantages**: Requires additional space for merging, may not be suitable
+                                        - <br>Advantages<br>: Efficient for large datasets, stable sorting algorithm.
+                                        - <br>Disadvantages<br>: Requires additional space for merging, may not be
+                                        suitable
                                         for
                                         memory-constrained environments.
 
                                         ### 5. Quick Sort
 
-                                        - **Description**: Quick sort is a divide-and-conquer algorithm that selects a
+                                        - <br>Description<br>: Quick sort is a divide-and-conquer algorithm that selects
+                                        a
                                         pivot element
                                         from the list, partitions the remaining elements into two sublists (those less
                                         than the
                                         pivot and those greater than the pivot), recursively sorts the sublists, and
                                         then combines
                                         them to produce the final sorted list.
-                                        - **Time Complexity**: O(n log n) on average, O(n^2) in the worst case (rarely
+                                        - <br>Time Complexity<br>: O(n log n) on average, O(n^2) in the worst case
+                                        (rarely
                                         occurs).
-                                        - **Space Complexity**: O(log n) on average, O(n) in the worst case (due to
+                                        - <br>Space Complexity<br>: O(log n) on average, O(n) in the worst case (due to
                                         stack space for
                                         recursive calls).
-                                        - **Advantages**: Efficient for large datasets, in-place sorting (with low
+                                        - <br>Advantages<br>: Efficient for large datasets, in-place sorting (with low
                                         overhead for
                                         memory), often faster than other O(n log n) sorting algorithms in practice.
-                                        - **Disadvantages**: Not stable, worst-case time complexity can occur with
+                                        - <br>Disadvantages<br>: Not stable, worst-case time complexity can occur with
                                         certain input
                                         distributions.
 
                                         ### 6. Heap Sort
 
-                                        - **Description**: Heap sort builds a max-heap (or min-heap) from the input list
+                                        - <br>Description<br>: Heap sort builds a max-heap (or min-heap) from the input
+                                        list
                                         and
                                         repeatedly extracts the maximum (or minimum) element from the heap and rebuilds
                                         the heap
                                         until the list is sorted.
-                                        - **Time Complexity**: O(n log n) in all cases (worst, average, and best).
-                                        - **Space Complexity**: O(1) (in-place sorting).
-                                        - **Advantages**: Efficient for large datasets, stable sorting algorithm.
-                                        - **Disadvantages**: Not as widely used as other sorting algorithms in practice,
+                                        - <br>Time Complexity<br>: O(n log n) in all cases (worst, average, and best).
+                                        - <br>Space Complexity<br>: O(1) (in-place sorting).
+                                        - <br>Advantages<br>: Efficient for large datasets, stable sorting algorithm.
+                                        - <br>Disadvantages<br>: Not as widely used as other sorting algorithms in
+                                        practice,
                                         requires
                                         additional space for heap construction.
 
@@ -1053,80 +1081,88 @@
 
                                         ### 1. Linear Search
 
-                                        - **Description**: Linear search sequentially checks each element in the
+                                        - <br>Description<br>: Linear search sequentially checks each element in the
                                         collection until
                                         the target element is found or the end of the collection is reached.
-                                        - **Time Complexity**: O(n) in the worst case, where n is the number of elements
+                                        - <br>Time Complexity<br>: O(n) in the worst case, where n is the number of
+                                        elements
                                         in the
                                         collection.
-                                        - **Space Complexity**: O(1) (constant space).
-                                        - **Advantages**: Simple implementation, works for unsorted collections.
-                                        - **Disadvantages**: Inefficient for large collections, particularly when the
+                                        - <br>Space Complexity<br>: O(1) (constant space).
+                                        - <br>Advantages<br>: Simple implementation, works for unsorted collections.
+                                        - <br>Disadvantages<br>: Inefficient for large collections, particularly when
+                                        the
                                         target element
                                         is near the end or not present.
 
                                         ### 2. Binary Search
 
-                                        - **Description**: Binary search is a divide-and-conquer algorithm that
+                                        - <br>Description<br>: Binary search is a divide-and-conquer algorithm that
                                         repeatedly divides
                                         the search interval in half until the target element is found (or determined to
                                         be not
                                         present).
-                                        - **Time Complexity**: O(log n) in the worst case, where n is the number of
+                                        - <br>Time Complexity<br>: O(log n) in the worst case, where n is the number of
                                         elements in the
                                         sorted collection.
-                                        - **Space Complexity**: O(1) (constant space).
-                                        - **Advantages**: Efficient for sorted collections, significantly faster than
+                                        - <br>Space Complexity<br>: O(1) (constant space).
+                                        - <br>Advantages<br>: Efficient for sorted collections, significantly faster
+                                        than
                                         linear search
                                         for large collections.
-                                        - **Disadvantages**: Requires the collection to be sorted, not suitable for
+                                        - <br>Disadvantages<br>: Requires the collection to be sorted, not suitable for
                                         dynamic
                                         collections (e.g., linked lists).
 
                                         ### 3. Depth-First Search (DFS)
 
-                                        - **Description**: Depth-First Search is a graph traversal algorithm that
+                                        - <br>Description<br>: Depth-First Search is a graph traversal algorithm that
                                         explores as far as
                                         possible along each branch before backtracking.
-                                        - **Time Complexity**: O(V + E), where V is the number of vertices and E is the
+                                        - <br>Time Complexity<br>: O(V + E), where V is the number of vertices and E is
+                                        the
                                         number of
                                         edges in the graph.
-                                        - **Space Complexity**: O(V) (due to the use of a stack for recursion or an
+                                        - <br>Space Complexity<br>: O(V) (due to the use of a stack for recursion or an
                                         explicit stack).
-                                        - **Advantages**: Simple implementation, useful for exploring all paths in a
+                                        - <br>Advantages<br>: Simple implementation, useful for exploring all paths in a
                                         graph, can find
                                         paths between two nodes.
-                                        - **Disadvantages**: Not guaranteed to find the shortest path, may encounter
+                                        - <br>Disadvantages<br>: Not guaranteed to find the shortest path, may encounter
                                         infinite loops
                                         in graphs with cycles.
 
                                         ### 4. Breadth-First Search (BFS)
 
-                                        - **Description**: Breadth-First Search is a graph traversal algorithm that
+                                        - <br>Description<br>: Breadth-First Search is a graph traversal algorithm that
                                         explores all
                                         neighbor nodes at the present depth before moving on to the nodes at the next
                                         depth level.
-                                        - **Time Complexity**: O(V + E), where V is the number of vertices and E is the
+                                        - <br>Time Complexity<br>: O(V + E), where V is the number of vertices and E is
+                                        the
                                         number of
                                         edges in the graph.
-                                        - **Space Complexity**: O(V) (due to the use of a queue).
-                                        - **Advantages**: Guarantees the shortest path in unweighted graphs, useful for
+                                        - <br>Space Complexity<br>: O(V) (due to the use of a queue).
+                                        - <br>Advantages<br>: Guarantees the shortest path in unweighted graphs, useful
+                                        for
                                         finding the
                                         shortest path between two nodes.
-                                        - **Disadvantages**: Requires more memory compared to DFS due to the use of a
+                                        - <br>Disadvantages<br>: Requires more memory compared to DFS due to the use of
+                                        a
                                         queue.
 
                                         ### 5. Interpolation Search
 
-                                        - **Description**: Interpolation search is an algorithm for searching for a
+                                        - <br>Description<br>: Interpolation search is an algorithm for searching for a
                                         given key in an
                                         ordered collection with evenly spaced values.
-                                        - **Time Complexity**: O(log log n) on average, where n is the number of
+                                        - <br>Time Complexity<br>: O(log log n) on average, where n is the number of
                                         elements in the
                                         collection.
-                                        - **Space Complexity**: O(1) (constant space).
-                                        - **Advantages**: Faster than binary search for uniformly distributed data.
-                                        - **Disadvantages**: Requires data to be uniformly distributed, not suitable for
+                                        - <br>Space Complexity<br>: O(1) (constant space).
+                                        - <br>Advantages<br>: Faster than binary search for uniformly distributed data.
+                                        - <br>Disadvantages<br>: Requires data to be uniformly distributed, not suitable
+                                        for
                                         non-linearly distributed data.
 
                                         ### Conclusion
@@ -1148,19 +1184,252 @@
                             <li>
                                 <details>
                                     <summary>Sequential Search</summary>
-                                    <p></p>
+                                    <p>Sequential search, also known as linear search, is a straightforward searching
+                                        algorithm used to find an element in a list or array. This algorithm checks each
+                                        element of the list one by one until it finds the target element or reaches the
+                                        end of the list.
+
+                                        Here’s a simple example of a sequential search in Python:
+
+                                        python
+                                        Copy code
+                                        def sequential_search(arr, target):
+                                        """
+                                        Perform a sequential search for the target element in the array.
+
+                                        Parameters:
+                                        arr (list): The list in which to search for the target element.
+                                        target: The element to search for.
+
+                                        Returns:
+                                        int: The index of the target element if found, otherwise -1.
+                                        """
+                                        for index in range(len(arr)):
+                                        if arr[index] == target:
+                                        return index # Return the index if the target is found
+                                        return -1 # Return -1 if the target is not found
+
+                                        # Example usage
+                                        arr = [10, 20, 30, 40, 50]
+                                        target = 30
+
+                                        result = sequential_search(arr, target)
+
+                                        if result != -1:
+                                        print(f"Element found at index {result}")
+                                        # Output: Element found at index 2
+                                        else:
+                                        print("Element not found")
+                                        Explanation:
+                                        Function Definition:
+
+                                        The function sequential_search takes two parameters: arr (the list to search)
+                                        and target (the element to find).
+                                        Iterate Through the List:
+
+                                        A for loop is used to iterate through each element in the list.
+                                        The range(len(arr)) generates indices from 0 to the length of the list minus
+                                        one.
+                                        Comparison:
+
+                                        Inside the loop, each element arr[index] is compared with the target.
+                                        If they are equal, the function returns the current index, indicating the
+                                        position of the target in the list.
+                                        Element Not Found:
+
+                                        If the loop completes without finding the target, the function returns -1 to
+                                        indicate that the target is not in the list.
+                                        Usage:
+                                        The example array arr contains five elements.
+                                        The target is 30.
+                                        The sequential_search function is called with arr and target as arguments.
+                                        The result is checked: if the result is not -1, the target was found, and its
+                                        index is printed. Otherwise, a message indicating that the element was not found
+                                        is printed.
+                                        This simple algorithm is useful for small lists or unsorted data. However, for
+                                        larger datasets or more complex searches, more efficient algorithms (like binary
+                                        search for sorted lists) might be preferable.</p>
                                 </details>
                             </li>
                             <li>
                                 <details>
                                     <summary>Binary Search</summary>
-                                    <p></p>
+                                    <p>Binary search is an efficient algorithm for finding an element in a sorted list.
+                                        It works by repeatedly dividing the search interval in half. If the value of the
+                                        search key is less than the item in the middle of the interval, narrow the
+                                        interval to the lower half. Otherwise, narrow it to the upper half. Repeatedly
+                                        check until the value is found or the interval is empty.
+
+                                        Here’s a simple example of a binary search in Python:
+
+                                        python
+                                        Copy code
+                                        def binary_search(arr, target):
+                                        """
+                                        Perform a binary search for the target element in a sorted array.
+
+                                        Parameters:
+                                        arr (list): The sorted list in which to search for the target element.
+                                        target: The element to search for.
+
+                                        Returns:
+                                        int: The index of the target element if found, otherwise -1.
+                                        """
+                                        left = 0
+                                        right = len(arr) - 1
+
+                                        while left <= right: mid=left + (right - left) // 2 # Calculate the middle index
+                                            # Check if the target is present at mid if arr[mid]==target: return mid # If
+                                            target is greater, ignore the left half elif arr[mid] < target: left=mid + 1
+                                            # If target is smaller, ignore the right half else: right=mid - 1 # Target
+                                            is not present in the array return -1 # Example usage arr=[10, 20, 30, 40,
+                                            50] target=30 result=binary_search(arr, target) if result !=-1:
+                                            print(f"Element found at index {result}") # Output: Element found at index 2
+                                            else: print("Element not found") Explanation: Function Definition: The
+                                            function binary_search takes two parameters: arr (the sorted list to search)
+                                            and target (the element to find). Initialize Pointers: left is set to 0,
+                                            representing the starting index of the list. right is set to len(arr) - 1,
+                                            representing the ending index of the list. Iterative Search: A while loop
+                                            runs as long as left is less than or equal to right. Inside the loop, the
+                                            middle index mid is calculated as left + (right - left) // 2. Check Middle
+                                            Element: If the middle element arr[mid] is equal to the target, the index
+                                            mid is returned. If the target is greater than the middle element, left is
+                                            updated to mid + 1, ignoring the left half. If the target is less than the
+                                            middle element, right is updated to mid - 1, ignoring the right half.
+                                            Element Not Found: If the loop completes without finding the target, the
+                                            function returns -1 to indicate that the target is not in the list. Usage:
+                                            The example array arr contains five sorted elements. The target is 30. The
+                                            binary_search function is called with arr and target as arguments. The
+                                            result is checked: if the result is not -1, the target was found, and its
+                                            index is printed. Otherwise, a message indicating that the element was not
+                                            found is printed. Binary search is highly efficient, with a time complexity
+                                            of O(log n), making it suitable for large datasets where linear search would
+                                            be too slow.</p>
                                 </details>
                             </li>
                             <li>
                                 <details>
                                     <summary>Depth First Search</summary>
-                                    <p></p>
+                                    <p>Depth First Search (DFS) is a fundamental algorithm for traversing or searching
+                                        tree or graph data structures. It starts at the root (or an arbitrary node in
+                                        the case of a graph) and explores as far as possible along each branch before
+                                        backtracking.
+
+                                        Here’s an example of DFS in Python, both for a tree and a graph.
+
+                                        DFS on a Binary Tree
+                                        python
+                                        Copy code
+                                        class TreeNode:
+                                        def __init__(self, value=0, left=None, right=None):
+                                        self.value = value
+                                        self.left = left
+                                        self.right = right
+
+                                        def dfs_tree(node):
+                                        """
+                                        Perform a depth-first search on a binary tree.
+
+                                        Parameters:
+                                        node (TreeNode): The root of the binary tree.
+
+                                        Returns:
+                                        None
+                                        """
+                                        if node is None:
+                                        return
+                                        # Process the current node
+                                        print(node.value, end=' ')
+                                        # Recursively visit the left subtree
+                                        dfs_tree(node.left)
+                                        # Recursively visit the right subtree
+                                        dfs_tree(node.right)
+
+                                        # Example usage
+                                        root = TreeNode(1)
+                                        root.left = TreeNode(2)
+                                        root.right = TreeNode(3)
+                                        root.left.left = TreeNode(4)
+                                        root.left.right = TreeNode(5)
+
+                                        print("DFS on binary tree:")
+                                        dfs_tree(root)
+                                        # Output: 1 2 4 5 3
+                                        Explanation:
+                                        TreeNode Class:
+
+                                        A simple class representing a node in a binary tree. Each node has a value, a
+                                        left child, and a right child.
+                                        DFS Function:
+
+                                        The dfs_tree function takes a node as input.
+                                        It first checks if the node is None (base case).
+                                        It processes the current node (prints its value).
+                                        It recursively calls itself on the left child, then on the right child.
+                                        Example Tree:
+
+                                        The tree is constructed with a root node of 1, and children 2 and 3. The left
+                                        child 2 has its own children 4 and 5.
+                                        DFS on a Graph
+                                        python
+                                        Copy code
+                                        def dfs_graph(graph, start, visited=None):
+                                        """
+                                        Perform a depth-first search on a graph.
+
+                                        Parameters:
+                                        graph (dict): The adjacency list of the graph.
+                                        start: The starting node for the DFS.
+                                        visited (set): A set of visited nodes to avoid cycles.
+
+                                        Returns:
+                                        None
+                                        """
+                                        if visited is None:
+                                        visited = set()
+                                        visited.add(start)
+                                        print(start, end=' ')
+
+                                        for neighbor in graph[start]:
+                                        if neighbor not in visited:
+                                        dfs_graph(graph, neighbor, visited)
+
+                                        # Example usage
+                                        graph = {
+                                        'A': ['B', 'C'],
+                                        'B': ['A', 'D', 'E'],
+                                        'C': ['A', 'F'],
+                                        'D': ['B'],
+                                        'E': ['B', 'F'],
+                                        'F': ['C', 'E']
+                                        }
+
+                                        print("\nDFS on graph:")
+                                        dfs_graph(graph, 'A')
+                                        # Output: A B D E F C
+                                        Explanation:
+                                        DFS Function:
+
+                                        The dfs_graph function takes three parameters: graph, start, and visited.
+                                        If visited is None, it initializes it as an empty set.
+                                        It adds the start node to the visited set and processes it (prints its value).
+                                        It iterates over all neighbors of the start node. If a neighbor hasn't been
+                                        visited, the function calls itself recursively on that neighbor.
+                                        Example Graph:
+
+                                        The graph is represented as an adjacency list. Each key is a node, and its value
+                                        is a list of adjacent nodes.
+                                        The dfs_graph function is called with the graph and starting node 'A'.
+                                        Summary
+                                        DFS on a Tree: Recursively explores each branch, starting from the root and
+                                        processing nodes in a pre-order manner.
+                                        DFS on a Graph: Recursively explores each node, ensuring that nodes are not
+                                        revisited using a visited set to avoid cycles.
+
+
+
+
+                                    </p>
                                 </details>
                             </li>
                             <li>
@@ -1174,6 +1443,17 @@
                 </li>
             </ul>
             <li>Graphs & Analysis</li>
+        </ol>
+    </div>
+    <div>
+        <h2>Database Management Systems</h2>
+        <ol>
+            <li>
+
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ol>
     </div>
     <!-- <div>
@@ -1202,26 +1482,552 @@
             <li></li>
             <li></li>
         </ol>
-    </div>
-    <div>
-        <h2></h2>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-    </div>
+    </div> -->
     <ul>
-        <li> -->
-    <details>
-        <summary>contents</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum facilis repudiandae, ipsa, a
-            laudantium totam magni esse amet illo nostrum voluptate distinctio. Facere delectus dolor totam iste
-            exercitationem labore.</p>
-    </details>
-    </li>
+        <li>
+            <details>
+                <summary>contents</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum facilis repudiandae, ipsa, a
+                    laudantium totam magni esse amet illo nostrum voluptate distinctio. Facere delectus dolor totam iste
+                    exercitationem labore.</p>
+            </details>
+        </li>
     </ul>
 </body>
 
 </html>
+<ul>
+    <li>
+        <details>
+            <summary>Database Constraints</summary>
+            <div>
+                <p>Database constraints are rules and restrictions applied to database tables to ensure the accuracy,
+                    consistency, and integrity of the data. They are crucial in maintaining the quality and reliability
+                    of the information stored in a database. Here are the main types of database constraints:
+
+                    Primary Key Constraint:
+
+                    Ensures that each row in a table is unique and not null.
+                    Typically applied to a single column, but can be a composite key (multiple columns).
+                    Foreign Key Constraint:
+
+                    Enforces a link between the data in two tables.
+                    Ensures that the value in one table corresponds to a valid, existing value in another table.
+                    Unique Constraint:
+
+                    Ensures all values in a column or a group of columns are unique across the table.
+                    Unlike primary keys, unique constraints can accept null values (if allowed by the database).
+                    Not Null Constraint:
+
+                    Ensures that a column cannot have a null value, meaning every row must contain a value for that
+                    column.
+                    Check Constraint:
+
+                    Ensures that all values in a column satisfy a specific condition.
+                    For example, a check constraint on an age column might require the value to be between 0 and 150.
+                    Default Constraint:
+
+                    Provides a default value for a column when no value is specified during the insertion of a record.
+                    Helps in ensuring data consistency by automatically inserting a default value.
+                    Examples of Constraints in SQL</p>
+                <p>Importance of Constraints
+                    Data Integrity: Constraints ensure that the data entered into the database adheres to predefined
+                    rules, preventing invalid data entry.
+                    Data Accuracy: Constraints like foreign keys ensure that relationships between tables remain
+                    consistent.
+                    Ease of Maintenance: With constraints in place, developers can be confident that the database
+                    enforces necessary rules, reducing the need for extensive validation in application code.
+                    Performance: Properly designed constraints can improve query performance by reducing the need for
+                    additional checks and validations in application logic.
+                    Using database constraints effectively is essential for designing robust and reliable databases that
+                    enforce business rules and maintain high data quality.</p>
+                <img src="Screenshot 2024-05-16 195846.png" alt="">
+            </div>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Entity Existence</summary>
+            <p>Entity existence in the context of databases refers to the concept of ensuring that certain data entities
+                must exist before related data can be inserted or updated in other tables. This is crucial for
+                maintaining referential integrity and ensuring that the database reflects real-world relationships
+                accurately.
+
+                ### Key Concepts of Entity Existence
+
+                1. <br>Referential Integrity<br>:
+                - Ensures that a foreign key in one table always refers to a valid primary key in another table.
+                - Prevents orphan records where a foreign key references a non-existent primary key.
+
+                2. <br>Mandatory Relationships<br>:
+                - Enforces that certain relationships between entities must exist.
+                - For example, every order must be associated with an existing customer.
+
+                ### Ensuring Entity Existence with Constraints
+
+                <br>Foreign Key Constraint<br>:
+                - The primary mechanism to ensure entity existence in relational databases.
+                - A foreign key constraint on a table ensures that the values in a column (or a group of columns) match
+                values in the referenced column(s) of another table.
+
+                ### Example
+
+                Suppose we have a simple e-commerce database with two tables: `Customers` and `Orders`.
+
+                <br>Customers Table<br>:
+                ```sql
+                CREATE TABLE Customers (
+                CustomerID int PRIMARY KEY,
+                Name varchar(255) NOT NULL,
+                Email varchar(255) UNIQUE NOT NULL
+                );
+                ```
+
+                <br>Orders Table<br>:
+                ```sql
+                CREATE TABLE Orders (
+                OrderID int PRIMARY KEY,
+                OrderDate date NOT NULL,
+                CustomerID int,
+                CONSTRAINT FK_Customer FOREIGN KEY (CustomerID)
+                REFERENCES Customers(CustomerID)
+                ON DELETE CASCADE
+                );
+                ```
+
+                In this example:
+                - The `CustomerID` in the `Orders` table is a foreign key referencing the `CustomerID` in the
+                `Customers` table.
+                - This foreign key constraint ensures that an order cannot be inserted unless the corresponding customer
+                exists in the `Customers` table.
+                - The `ON DELETE CASCADE` clause ensures that if a customer is deleted, all their associated orders are
+                also deleted, maintaining referential integrity.
+
+                ### Benefits of Ensuring Entity Existence
+
+                1. <br>Data Consistency<br>: Ensures that related data in different tables are consistent, preventing
+                scenarios where a record references a non-existent entity.
+                2. <br>Data Integrity<br>: Maintains the integrity of relationships between tables, reflecting
+                real-world
+                entities and relationships.
+                3. <br>Simplified Data Management<br>: Reduces the complexity of managing data, as the database system
+                automatically enforces entity existence rules.
+                4. <br>Reduced Errors<br>: Minimizes the risk of errors and anomalies in the database by ensuring that
+                all
+                references are valid.
+
+                ### Example in Business Context
+
+                Consider a company managing its employees and departments. An employee must be associated with an
+                existing department.
+
+                <br>Departments Table<br>:
+                ```sql
+                CREATE TABLE Departments (
+                DepartmentID int PRIMARY KEY,
+                DepartmentName varchar(255) NOT NULL
+                );
+                ```
+
+                <br>Employees Table<br>:
+                ```sql
+                CREATE TABLE Employees (
+                EmployeeID int PRIMARY KEY,
+                Name varchar(255) NOT NULL,
+                DepartmentID int,
+                CONSTRAINT FK_Department FOREIGN KEY (DepartmentID)
+                REFERENCES Departments(DepartmentID)
+                );
+                ```
+
+                In this scenario:
+                - The `DepartmentID` in the `Employees` table must correspond to an existing `DepartmentID` in the
+                `Departments` table.
+                - This ensures that every employee is assigned to a valid department, preserving the integrity of the
+                organizational structure.
+
+                ### Conclusion
+
+                Entity existence is a fundamental concept in database design, ensuring that relationships between
+                entities are accurately represented and maintained. By using constraints like foreign keys, databases
+                can enforce referential integrity, maintain data consistency, and reflect real-world relationships
+                effectively.
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Referential Integrity Constraints</summary>
+            <p>Referential integrity constraints are rules that ensure the relationships between tables in a relational
+                database remain consistent. These constraints prevent orphaned records and maintain the accuracy and
+                reliability of data by ensuring that references between tables are valid.
+
+                ### Key Aspects of Referential Integrity Constraints
+
+                1. <br>Foreign Keys<br>:
+                - A foreign key is a column or a set of columns in one table that references the primary key columns of
+                another table.
+                - This constraint ensures that the value in the foreign key column(s) matches one of the values in the
+                referenced primary key column(s) or is null (if allowed).
+
+                2. <br>Primary Keys<br>:
+                - A primary key is a column or a set of columns that uniquely identifies each row in a table.
+                - It cannot contain null values and must contain unique values.
+
+                ### Enforcing Referential Integrity
+
+                To enforce referential integrity, databases use foreign key constraints. When defining a foreign key,
+                you can specify actions to take when the referenced data changes. These actions are:
+
+                1. <br>CASCADE<br>:
+                - <br>ON DELETE CASCADE<br>: Automatically deletes the rows that reference the deleted row.
+                - <br>ON UPDATE CASCADE<br>: Automatically updates the foreign key values to match the new primary key
+                values.
+
+                2. <br>SET NULL<br>:
+                - <br>ON DELETE SET NULL<br>: Sets the foreign key values to null when the referenced row is deleted.
+                - <br>ON UPDATE SET NULL<br>: Sets the foreign key values to null when the referenced row is updated.
+
+                3. <br>SET DEFAULT<br>:
+                - <br>ON DELETE SET DEFAULT<br>: Sets the foreign key values to their default when the referenced row is
+                deleted.
+                - <br>ON UPDATE SET DEFAULT<br>: Sets the foreign key values to their default when the referenced row is
+                updated.
+
+                4. <br>RESTRICT<br>:
+                - <br>ON DELETE RESTRICT<br>: Prevents the deletion of a referenced row.
+                - <br>ON UPDATE RESTRICT<br>: Prevents the update of a referenced row.
+
+                5. <br>NO ACTION<br>:
+                - Similar to RESTRICT, but the check is deferred until the end of the transaction.
+
+                ### Examples
+
+                Here are examples illustrating referential integrity constraints in SQL:
+
+                <br>Example 1: Creating Tables with Referential Integrity<br>
+
+                <br>Customers Table<br>:
+                ```sql
+                CREATE TABLE Customers (
+                CustomerID int PRIMARY KEY,
+                Name varchar(255) NOT NULL,
+                Email varchar(255) UNIQUE NOT NULL
+                );
+                ```
+
+                <br>Orders Table<br>:
+                ```sql
+                CREATE TABLE Orders (
+                OrderID int PRIMARY KEY,
+                OrderDate date NOT NULL,
+                CustomerID int,
+                CONSTRAINT FK_Customer FOREIGN KEY (CustomerID)
+                REFERENCES Customers(CustomerID)
+                ON DELETE CASCADE
+                ON UPDATE CASCADE
+                );
+                ```
+
+                In this example:
+                - `CustomerID` in the `Orders` table is a foreign key that references `CustomerID` in the `Customers`
+                table.
+                - `ON DELETE CASCADE` ensures that if a customer is deleted, all their orders are also deleted.
+                - `ON UPDATE CASCADE` ensures that if the `CustomerID` is updated in the `Customers` table, it is also
+                updated in the `Orders` table.
+
+                <br>Example 2: Handling Nulls with Referential Integrity<br>
+
+                <br>Departments Table<br>:
+                ```sql
+                CREATE TABLE Departments (
+                DepartmentID int PRIMARY KEY,
+                DepartmentName varchar(255) NOT NULL
+                );
+                ```
+
+                <br>Employees Table<br>:
+                ```sql
+                CREATE TABLE Employees (
+                EmployeeID int PRIMARY KEY,
+                Name varchar(255) NOT NULL,
+                DepartmentID int,
+                CONSTRAINT FK_Department FOREIGN KEY (DepartmentID)
+                REFERENCES Departments(DepartmentID)
+                ON DELETE SET NULL
+                ON UPDATE SET NULL
+                );
+                ```
+
+                In this example:
+                - `DepartmentID` in the `Employees` table is a foreign key that references `DepartmentID` in the
+                `Departments` table.
+                - `ON DELETE SET NULL` ensures that if a department is deleted, the `DepartmentID` in the `Employees`
+                table is set to null.
+                - `ON UPDATE SET NULL` ensures that if the `DepartmentID` is updated in the `Departments` table, the
+                `DepartmentID` in the `Employees` table is set to null.
+
+                ### Conclusion
+
+                Referential integrity constraints are essential for maintaining the consistency and accuracy of data in
+                relational databases. By defining foreign key relationships and specifying actions for updates and
+                deletions, you can ensure that the relationships between tables are preserved, preventing orphaned
+                records and maintaining data integrity.
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Functional Dependencies 1NF , 2NF</summary>
+            <p>Functional dependencies and normal forms are crucial concepts in database normalization. They help
+                organize the data in a relational database to reduce redundancy and improve data integrity. Let's delve
+                into functional dependencies, 1NF (First Normal Form), and 2NF (Second Normal Form).
+
+                ### Functional Dependencies
+
+                A functional dependency is a relationship between two attributes, typically between a primary key and
+                other non-key attributes within a table. If attribute `A` functionally determines attribute `B` (denoted
+                as `A -> B`), then for every unique value of `A`, there is exactly one value of `B`.
+
+                ### First Normal Form (1NF)
+
+                A table is in the First Normal Form if:
+                1. <br>Atomicity<br>: All columns contain only atomic (indivisible) values.
+                2. <br>Uniqueness<br>: Each column must contain unique values.
+                3. <br>No Repeating Groups<br>: There must be no repeating groups or arrays.
+
+                In essence, 1NF eliminates duplicate rows and ensures that each column contains only one value per row.
+
+                <br>Example:<br>
+                Consider a table storing information about students and their courses.
+
+                <br>Non-1NF Table:<br>
+                ```
+                StudentID | StudentName | Courses
+                ----------------------------------------
+                1 | Alice | Math, Science
+                2 | Bob | Math
+                3 | Charlie | Science, English
+                ```
+
+                <br>1NF Table:<br>
+                ```
+                StudentID | StudentName | Course
+                ----------------------------------
+                1 | Alice | Math
+                1 | Alice | Science
+                2 | Bob | Math
+                3 | Charlie | Science
+                3 | Charlie | English
+                ```
+
+                ### Second Normal Form (2NF)
+
+                A table is in the Second Normal Form if:
+                1. It is already in 1NF.
+                2. It has no partial dependency, meaning non-key attributes must depend on the entire primary key, not
+                just part of it (applies primarily to tables with composite keys).
+
+                <br>Example:<br>
+                Consider a table storing student enrollments.
+
+                <br>1NF Table:<br>
+                ```
+                EnrollmentID | StudentID | CourseID | CourseName | Instructor
+                --------------------------------------------------------------
+                1 | 1 | 101 | Math | Dr. Smith
+                2 | 1 | 102 | Science | Dr. Johnson
+                3 | 2 | 101 | Math | Dr. Smith
+                4 | 3 | 102 | Science | Dr. Johnson
+                5 | 3 | 103 | English | Dr. Brown
+                ```
+
+                In this 1NF table, `CourseName` and `Instructor` depend only on `CourseID`, not on `EnrollmentID` (the
+                primary key). This is a partial dependency.
+
+                <br>To achieve 2NF, we split the table:<br>
+
+                <br>Enrollments Table:<br>
+                ```
+                EnrollmentID | StudentID | CourseID
+                -----------------------------------
+                1 | 1 | 101
+                2 | 1 | 102
+                3 | 2 | 101
+                4 | 3 | 102
+                5 | 3 | 103
+                ```
+
+                <br>Courses Table:<br>
+                ```
+                CourseID | CourseName | Instructor
+                -----------------------------------
+                101 | Math | Dr. Smith
+                102 | Science | Dr. Johnson
+                103 | English | Dr. Brown
+                ```
+
+                Now, there are no partial dependencies, and the tables are in 2NF:
+                - In the `Enrollments` table, `EnrollmentID` is the primary key.
+                - In the `Courses` table, `CourseID` is the primary key.
+
+                ### Summary
+
+                - <br>1NF (First Normal Form)<br>: Ensures atomicity, uniqueness, and no repeating groups in a table.
+                - <br>2NF (Second Normal Form)<br>: Builds on 1NF by eliminating partial dependencies, ensuring non-key
+                attributes depend on the entire primary key.
+
+                By applying these normal forms, we ensure our database is better structured, reducing redundancy and
+                improving data integrity.
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Inclusion Dependencies(3NF , BCNF)</summary>
+            <p>
+                Inclusion dependencies are not commonly used terminology in the context of database normalization.
+                Instead, let's focus on Third Normal Form (3NF) and Boyce-Codd Normal Form (BCNF), which deal with
+                functional dependencies and the elimination of redundancy.
+
+                ### Third Normal Form (3NF)
+
+                A table is in Third Normal Form if:
+                1. It is already in Second Normal Form (2NF).
+                2. It has no transitive dependency, meaning no non-prime attribute depends on another non-prime
+                attribute.
+
+                A non-prime attribute is an attribute that is not part of any candidate key.
+
+                <br>Example:<br>
+                Consider a table storing information about students and their advisors.
+
+                <br>2NF Table:<br>
+                ```
+                StudentID | StudentName | AdvisorID | AdvisorName
+                -----------------------------------------------
+                1 | Alice | 10 | Dr. Smith
+                2 | Bob | 11 | Dr. Johnson
+                3 | Charlie | 10 | Dr. Smith
+                ```
+
+                In this 2NF table, `AdvisorName` depends on `AdvisorID`, not on `StudentID`. This is a transitive
+                dependency because `AdvisorName` is indirectly dependent on the primary key (`StudentID`) through
+                `AdvisorID`.
+
+                <br>To achieve 3NF, we split the table:<br>
+
+                <br>Students Table:<br>
+                ```
+                StudentID | StudentName | AdvisorID
+                -----------------------------------
+                1 | Alice | 10
+                2 | Bob | 11
+                3 | Charlie | 10
+                ```
+
+                <br>Advisors Table:<br>
+                ```
+                AdvisorID | AdvisorName
+                -----------------------
+                10 | Dr. Smith
+                11 | Dr. Johnson
+                ```
+
+                Now, there are no transitive dependencies, and the tables are in 3NF:
+                - In the `Students` table, `StudentID` is the primary key.
+                - In the `Advisors` table, `AdvisorID` is the primary key.
+
+                ### Boyce-Codd Normal Form (BCNF)
+
+                BCNF is a stricter version of 3NF. A table is in BCNF if:
+                1. It is already in 3NF.
+                2. For every functional dependency \( A \to B \), \( A \) is a superkey.
+
+                A superkey is an attribute or a set of attributes that uniquely identifies a row in a table.
+
+                <br>Example:<br>
+                Consider a table storing course enrollments and the instructors who teach them.
+
+                <br>3NF Table:<br>
+                ```
+                CourseID | InstructorID | Room
+                -----------------------------
+                1 | 101 | 202
+                2 | 102 | 203
+                3 | 101 | 204
+                ```
+
+                Assume that:
+                - Each course is taught by one instructor.
+                - An instructor can teach multiple courses.
+                - Each room is uniquely assigned to a course.
+
+                In this table:
+                - `CourseID` is a candidate key.
+                - `InstructorID` and `Room` depend on `CourseID`.
+
+                However, if we have a situation where each instructor is assigned a unique room regardless of the
+                course, there might be a functional dependency `InstructorID -> Room`.
+
+                <br>BCNF Violation:<br>
+                ```
+                CourseID | InstructorID | Room
+                -----------------------------
+                1 | 101 | 202
+                2 | 102 | 203
+                3 | 101 | 202
+                ```
+
+                Here, `InstructorID` is not a superkey because it does not uniquely identify rows. To resolve this and
+                achieve BCNF, we need to decompose the table.
+
+                <br>To achieve BCNF, we split the table:<br>
+
+                <br>Courses Table:<br>
+                ```
+                CourseID | InstructorID
+                -----------------------
+                1 | 101
+                2 | 102
+                3 | 101
+                ```
+
+                <br>Instructors Table:<br>
+                ```
+                InstructorID | Room
+                -------------------
+                101 | 202
+                102 | 203
+                ```
+
+                Now, all functional dependencies have superkeys as their determinants, and the tables are in BCNF:
+                - In the `Courses` table, `CourseID` is the primary key.
+                - In the `Instructors` table, `InstructorID` is the primary key.
+
+                ### Summary
+
+                - <br>3NF (Third Normal Form)<br>: Eliminates transitive dependencies, ensuring non-prime attributes
+                depend
+                only on candidate keys.
+                - <br>BCNF (Boyce-Codd Normal Form)<br>: A stricter version of 3NF, ensuring every determinant is a
+                superkey.
+
+                By normalizing to 3NF and BCNF, we reduce redundancy and enhance the integrity of the database, making
+                it more robust and easier to maintain.
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Lossless Join Decompositions(4NF , 5NF)</summary>
+            <p></p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>DKNF</summary>
+            <p></p>
+        </details>
+    </li>
+</ul>
